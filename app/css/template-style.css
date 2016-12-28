@@ -1,0 +1,192 @@
+.font-white {
+  color: #fff !important;
+}
+.font-black {
+  color: #000 !important;
+}
+.font-blue {
+  color: #336687 !important;
+}
+.font-darkblue {
+  color: #1f3d52 !important;
+}
+.font-active {
+  color: #cbd3d8 !important;
+}
+.font-bold {
+  font-weight: bold !important;
+  font-family: "RobotoBold" !important;
+}
+.font-normal {
+  font-weight: normal !important;
+  font-family: "RobotoRegular" !important;
+}
+.font-xs {
+  font-size: 50%;
+}
+.font-s {
+  font-size: 80%;
+}
+.font-l {
+  font-size: 100%;
+}
+.font-xl {
+  font-size: 120%;
+}
+.font-xxl {
+  font-size: 150%;
+}
+.font-italic {
+  font-style: italic;
+}
+.ttu {
+  text-transform: uppercase !important;
+}
+.tdu {
+  text-decoration: underline;
+}
+.ttn {
+  text-transform: none !important;
+}
+.tac {
+  text-align: center !important;
+}
+.tal {
+  text-align: left !important;
+}
+.taj {
+  text-align: justify !important;
+}
+.tar {
+  text-align: right !important;
+}
+.full {
+  width: 100% !important;
+}
+.large {
+  width: 66.66% !important;
+}
+.small {
+  width: 33.33% !important;
+}
+.semi {
+  width: 50% !important;
+}
+.wrap {
+  -webkit-flex-wrap: wrap !important;
+      -ms-flex-wrap: wrap !important;
+          flex-wrap: wrap !important;
+}
+.center {
+  margin: 0 auto;
+}
+.clear {
+  clear: both !important;
+}
+.fl {
+  float: left !important;
+}
+.fr {
+  float: right !important;
+}
+.active {
+  background: #cbd3d8;
+}
+.none {
+  display: none !important;
+}
+.opacity {
+  opacity: 0 !important;
+}
+.static-page h1,
+.static-page h2,
+.static-page h3,
+.static-page h4,
+.static-page h5,
+.static-page h6 {
+  font-family: "GothamProRegular";
+  text-transform: uppercase;
+}
+.static-page h1 {
+  color: #336687;
+  font-weight: 600;
+  margin: 15px 0;
+}
+.static-page h2 {
+  color: #336687;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.static-page h3 {
+  font-weight: 400;
+  font-size: 22px;
+  margin: 5px 0;
+  font-weight: 600;
+}
+.static-page h4 {
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: none;
+  margin: 5px 0;
+}
+.static-page h5 {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: none;
+  margin: 5px 0;
+}
+.static-page h6 {
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: none;
+  margin: 5px 0;
+}
+.static-page p {
+  text-align: left;
+}
+.static-page img {
+  margin: 10px 0;
+  border: 1px solid rgba(99,99,99,0.5);
+}
+.static-page img.fl {
+  margin-right: 25px;
+}
+.static-page img.fr {
+  margin-left: 25px;
+}
+.static-page .float-center {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+@media screen and (max-width: 768px) {
+  .static-page .float-center {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+}
+.static-page .float-center img {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  height: 100%;
+  margin: 25px;
+}
+@media screen and (max-width: 768px) {
+  .static-page .float-center p {
+    width: 100%;
+  }
+}
+@import "../fonts/roboto/roboto.css";
+h1 {
+  font-family: "roboto";
+}
+/*# sourceMappingURL=app/stylus/template-style.css.map */
+/*# sourceMappingURL=template-style.css.map */
