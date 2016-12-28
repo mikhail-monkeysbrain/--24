@@ -2,5 +2,95 @@
 @import "helpers.styl"
 @import "../fonts/roboto/roboto.css"
 
+*
+  margin: 0
+  padding: 0
+  box-sizing border-box
+
+.main
+  background: url(../img/main-bg.jpg) 50% 0 no-repeat
+  background-size cover
+  width: 100%
+  height: 100vh
+  top: 0
+  left: 0
+  position: fixed
+  display flex
+  justify-content space-around
+  overflow hidden
+.line
+  position fixed
+  width 10px
+  height 110%
+  top -5%
+  background #fff
+  z-index 9
+  left calc(50% - 7px)
+  transform rotate(-9deg)
+.commercial, .residential
+  width 200%
+  height 110vh
+  transform rotate(-9deg)
+  top 0
+  text-align center
+  line-height 20
+  margin -5vh .3%
+  position relative
+.commercial //left
+  &::after
+    transition all 1s
+    transition-delay .2s
+    content ''
+    position absolute
+    left -20%
+    top -5%
+    background rgba(241,255,199,0.7)
+    width 120%
+    height 110%
+    display block
+  &::before
+    transition all 1s
+    transition-delay .2s
+    content: ''
+    background: #ffffff
+    width: 7px
+    height: 62vh
+    display: block
+    position: absolute
+    right: 12px
+    top: 0
+  &:hover::after
+    transition-delay 0s
+    top 150%
+  &:hover::before
+    transition-delay 0s
+    top -100vh
+.residential
+  &::after
+    transition all 1s
+    transition-delay .2s
+    content ''
+    position absolute
+    top -5%
+    right -20%
+    background rgba(241,255,199,0.7)
+    width 120%
+    height 110%
+    display block
+  &::before
+    transition all 1s
+    transition-delay .2s
+    content: ''
+    background: #ffffff
+    width: 7px
+    height: 62vh
+    display: block
+    position: absolute
+    left: 8px
+    bottom: 0
+  &:hover::after
+    top -120%
+  &:hover::before
+    bottom -130vh
 h1
 	font-family: "roboto"
