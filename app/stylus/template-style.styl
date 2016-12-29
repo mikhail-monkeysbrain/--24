@@ -6,7 +6,40 @@
   margin: 0
   padding: 0
   box-sizing border-box
-
+ a
+   text-decoration: none
+.btn
+  background: transparent
+  border 2px solid green
+  border-radius 5px
+  padding: 5px 10px
+  color black
+  font-family: 'Roboto';
+  font-size normal
+  cursor: pointer
+  transition animation
+  &:hover
+    background: green
+    color: #fff
+header
+  position: fixed
+  width: 100%
+  z-index: 1
+  top: 15px
+  left: 0
+  display: flex
+  justify-content: space-around
+  align-items: center
+img.logo
+  z-index: 10
+.phone
+  display: flex
+  align-items: center
+  &-number
+    font-family: 'Roboto';
+    font-size x-large
+    font-weight: 500
+    margin: 0 20px
 .main
   background: url(../img/main-bg.jpg) 50% 0 no-repeat
   background-size cover
@@ -27,13 +60,35 @@
   z-index 9
   left calc(50% - 7px)
   transform rotate(-9deg)
+.link
+  transform rotate(9deg)
+  position: absolute
+  z-index: 1
+  left: 20%
+  width: 75%
+  top: 33%
+  color: green
+  font-family: 'Roboto'
+  text-transform: uppercase
+  transition animation
+  p
+    font-size normal
+    padding-bottom: 5px
+    border-bottom 2px solid green
+    &.bw
+      border-color #fff
+  h1
+    font-size xxx-large
+    font-weight: 800
+  h2
+    font-size xx-large
+    font-weight: 600
+
 .commercial, .residential
   width 200%
   height 110vh
   transform rotate(-9deg)
   top 0
-  text-align center
-  line-height 20
   margin -5vh .3%
   position relative
 .commercial //left
@@ -66,6 +121,19 @@
     transition-delay 0s
     top -100vh
 .residential
+  .link
+    left: 10%
+    top: 50%
+    text-align: right
+    width: 75%
+    p
+      border-bottom: 0
+      padding-bottom: 0
+      padding-top: 5px
+      margin-top: 5px
+      border-top: 2px solid green
+      &.bw
+        border-color #fff
   &::after
     transition all 1s
     transition-delay .2s
@@ -92,5 +160,39 @@
     top -120%
   &:hover::before
     bottom -130vh
+footer
+  display: flex
+  width: 100%
+  justify-content: center
+  align-items: center
+  position: fixed
+  z-index: 1
+  padding: 20px
+  left: 0
+  bottom: 0
+  background: #fff
+  .footer-logo, .aitek
+    margin: 0 20px
+    width: 10%
+  .footer-logo
+    size (162px 28px)
+  .aitek
+    size (86px 23px)
+  .phone-number
+    color: gray
+  .btn
+    color gray
+  .address
+    color gray
+    font-family: 'roboto'
+    width: 13em
+    margin: 0 0 0 20px
 h1
-	font-family: "roboto"
+  font-family: "roboto"
+i
+  color gray
+  margin: 0 10px
+  cursor: pointer
+  transition animation
+  &:hover
+    color darkgray
