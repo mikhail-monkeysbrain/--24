@@ -2,11 +2,21 @@ doctype html
 html(lang="ru")
 head
   link(rel="stylesheet", href="css/font-awesome.min.css")
+  link(rel="stylesheet", href="fonts/roboto/roboto.css")
   link(rel="stylesheet", href="css/jquery.pagepiling.css")
   link(rel="stylesheet", href="css/template-style.css")
   meta(charset="UTF-8")
   title СУ-24
 body
+  #popup-2
+    form
+      h2 Заказать звонок
+      p.first Оставьте свои контактные данные и наши менеджеры свяжутся с Вами в ближайшее время! 
+      p.second Ваша заявка успешно отправлена! 
+      input.first(type="text" placeholder="Имя")
+      input.first(type="text" placeholder="Телефон")
+      .submit.first Заказать звонок
+      .close-2
   header.white
     a(href="index.html")
       img.logo(src="img/logo-white.png")
