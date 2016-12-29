@@ -8,6 +8,18 @@
   box-sizing border-box
  a
    text-decoration: none
+.burger
+  size (37px 37px)
+  background: url('../img/menu.png') no-repeat 50%
+  border-radius 50%
+  box-shadow 0 2px 2px 2px #000
+  cursor pointer
+  transition animation
+  position absolute
+  left 25%
+  &:hover
+    box-shadow 0 2px 7px 2px #000
+    
 .btn
   background: transparent
   border 2px solid green
@@ -24,22 +36,40 @@
 header
   position: fixed
   width: 100%
-  z-index: 1
+  z-index: 10
   top: 15px
   left: 0
   display: flex
   justify-content: space-around
   align-items: center
+  &.white
+    color #fff
+    a
+      position absolute
+      left 8%
+  .phone
+    position absolute
+    right 8%
+  a
+    position absolute
+    left 8%
 img.logo
   z-index: 10
 .phone
   display: flex
   align-items: center
+  text-shadow: 2px 2px 2px #000
   &-number
     font-family: 'Roboto';
     font-size x-large
     font-weight: 500
     margin: 0 20px
+  &-btn
+    &_call
+      &__white
+        @extend .btn:hover
+        &:hover
+          background: transparent
 .main
   background: url(../img/main-bg.jpg) 50% 0 no-repeat
   background-size cover
@@ -196,3 +226,204 @@ i
   transition animation
   &:hover
     color darkgray
+#pp-nav
+  li
+    size (15px 20px)
+  .active
+    span
+      background: green !important
+  span
+    size (15px 15px)
+    border: 1px solid #fff !important;
+  
+#section1
+  background: url('../img/res-bg1.jpg') no-repeat 50%
+  background-size cover
+#section2
+  background: url('../img/res-bg2.jpg') no-repeat 50%
+  background-size cover
+.intro
+  width 11em
+  cursor pointer
+  position absolute
+  right 15%
+  bottom 15%
+  &:hover
+    & > h3:after
+      bottom: -1.8em
+  h2
+    font-family "roboto"
+    font-size xx-large
+    color #fff
+    text-transform uppercase
+    text-shadow: 2px 2px 2px #000
+    margin-bottom 5px
+  h3
+    font-family "roboto"
+    font-size 23px
+    color #fff
+    text-transform uppercase
+    border-bottom 2px solid #fff
+    position relative
+    text-shadow: 2px 2px 2px #000
+    padding-bottom 5px
+    &:after
+      content "\FE40"
+      position absolute
+      bottom -1.4em
+      left: calc(50% - .5em)
+      font-size xx-large
+      transition animation
+#section3
+  background: url('../img/res-bg3.jpg') no-repeat 50%
+  background-size cover
+  .intro
+    width 18em
+    h2
+      text-align center
+#section4
+  background: url('../img/res-bg4.jpg') no-repeat 50%
+  background-size cover
+  .intro
+    width 18em
+    h2, h3
+      text-align center
+#left-menu
+  position fixed
+  z-index 9
+  width 33%
+  height 100%
+  left -100%
+  top 0
+  background: url('../img/menu-block.png') right
+  background-size cover
+  transition animation
+  &.open
+    left 0
+  .close
+    size (37px 37px)
+    border-radius 50%
+    background: url('../img/close.png')
+    position absolute
+    top 15px
+    right 5%
+    cursor pointer
+    box-shadow 0 2px 2px 2px #000
+    &:hover
+      box-shadow 0 2px 7px 2px #000
+  ul
+    margin-top 7em
+    width 60%
+    margin-left 17%
+    h4
+      color #fff
+      font-size x-large
+      text-align center
+      font-family "roboto"
+      text-transform uppercase
+    .horline
+      width 10em
+      height 2px
+      background: #fff
+      margin 0 auto
+      margin-top .5em
+      margin-bottom 1em
+    li
+      text-align center
+      list-style none
+      &:nth-last-child(1)
+        border-bottom 1px solid #fff
+        width 9em
+        margin 0 auto
+      a
+        color #fff
+        font-size normal
+        font-family "roboto"
+        text-transform uppercase
+        line-height 1.7
+        transition animation
+        &.map
+          cursor pointer
+        &:hover
+          color green
+#popup
+  position fixed
+  width 100%
+  height 100%
+  background: rgba(0,0,0, .7)
+  z-index 101
+  .text
+    display -webkit-flex
+    display -moz-flex
+    display -ms-flex
+    display -o-flex
+    display flex
+    flex-direction column
+    position absolute
+    top calc(50% - 4em)
+    transform rotate(-90deg)
+    h1, p
+      color #fff
+      font-size xxx-large
+      width 9em
+      font-family 'roboto'
+      font-weight 400
+      text-transform uppercase
+      text-align center
+    p
+      font-size normal
+      width auto
+      font-size 14px
+  .popup-map
+    width 60%
+    margin 10vh 25%
+    height 80vh
+    
+    &-icons
+      display -webkit-flex
+      display -moz-flex
+      display -ms-flex
+      display -o-flex
+      display flex
+      flex-wrap wrap
+      justify-content space-around
+      width 100%
+      &--item
+        width 22%
+        background: lightgreen
+        border-radius 10px
+        margin 10px 5px
+        display -webkit-flex
+        display -moz-flex
+        display -ms-flex
+        display -o-flex
+        display flex
+        flex-direction column
+        align-items center
+        justify-content center
+        cursor pointer
+        transition animation
+        &:hover
+          background: orange
+        p
+          margin-top 10px
+          color #fff
+          text-align center
+          font-family 'roboto'
+          text-transform uppercase
+        &-trans
+          background: transparent
+          width 22%
+          margin 10px 5px
+          display -webkit-flex
+          display -moz-flex
+          display -ms-flex
+          display -o-flex
+          display flex
+          align-items center
+          justify-content center
+          cursor pointer
+          transition animation
+          border-radius 10px
+          &:hover
+            background: orange
